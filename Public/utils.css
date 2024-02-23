@@ -37,7 +37,9 @@ h3 {
   font-size: var(--fs-3);
 }
 
-h4 {
+h4,
+h5,
+h6 {
   font-size: var(--fs-4);
 }
 

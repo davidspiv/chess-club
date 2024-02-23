@@ -3,35 +3,41 @@
   --link-color: #396eff;
   --menu-text-color: #789eb7;
 
-  --sidebar-width: 20rem;
+  --sidebar-width: 18rem;
 }
 
-h1 {
-  color: #ff1b1b;
+body {
+  display: flex;
+  margin: 0;
 }
 
 h2 {
+  color: #ff1b1b;
+}
+
+h3 {
   background-color: #2b5680;
   width: 100%;
   padding: 0.2rem 1rem;
 }
 
 h1,
-h3,
-h4 {
+h2,
+h4,
+h5 {
   text-align: center;
   margin: 0;
   padding: 0;
+  font-weight: 200;
 }
 
 #sidebar {
-  position: fixed;
-  width: var(--sidebar-width);
   display: flex;
   flex-direction: column;
 }
 
 #main-nav {
+  width: 18rem;
   border-right: 0.5px solid var(--accent-color);
   background-color: #242628;
   box-shadow: 1px;
@@ -49,14 +55,12 @@ nav a {
   padding-left: 2rem;
 }
 
-nav img {
-  margin: 0 auto;
-  padding-bottom: 2rem;
+nav li {
+  margin-bottom: 1rem;
 }
 
-nav li {
-  padding: 0;
-  margin: 0;
+nav img {
+  margin: 1rem auto;
 }
 
 nav p,
@@ -65,6 +69,6 @@ nav aside {
 }
 
 main {
-  margin-left: var(--sidebar-width);
+  /* margin-left: var(--sidebar-width); */
   padding: 0 2rem;
 }
