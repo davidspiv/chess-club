@@ -3,7 +3,7 @@
   --link-color: #396eff;
   --menu-text-color: #789eb7;
 
-  --sidebar-width: 15rem;
+  --sidebar-width: 20rem;
 }
 
 h1 {
@@ -54,6 +54,11 @@ nav img {
   padding-bottom: 2rem;
 }
 
+nav li {
+  padding: 0;
+  margin: 0;
+}
+
 nav p,
 nav aside {
   color: var(--menu-text-color);
@@ -62,8 +67,4 @@ nav aside {
 main {
   margin-left: var(--sidebar-width);
   padding: 0 2rem;
-}
-
-section {
-  height: 60rem;
 }
