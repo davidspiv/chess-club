@@ -1,0 +1,46 @@
+* {
+  --sidebar-width: 15rem;
+}
+#sidebar {
+  position: fixed;
+  width: var(--sidebar-width);
+  display: flex;
+  flex-direction: column;
+}
+
+#main-nav {
+  border-right: 0.5px solid var(--accent-color);
+  background-color: #242628;
+  box-shadow: 1px;
+}
+
+nav div {
+  border-bottom: 2px solid var(--link-color);
+}
+
+nav p {
+  text-align: center;
+}
+
+nav a {
+  padding-left: 2rem;
+}
+
+nav img {
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
+nav p,
+nav aside {
+  color: var(--menu-text-color);
+}
+
+main {
+  margin-left: var(--sidebar-width);
+  padding: 0 2rem;
+}
+
+section {
+  height: 60rem;
+}
