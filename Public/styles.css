@@ -3,25 +3,33 @@
   --link-color: #396eff;
   --menu-text-color: #789eb7;
 
-  --sidebar-width: 20rem;
+  --sidebar-width: clamp(18rem, 20vw, 23rem);
+}
+
+body {
+  margin: 1rem;
+}
+
+main {
+  margin-left: var(--sidebar-width);
 }
 
 h1 {
+  text-align: center;
   color: #ff1b1b;
+  margin: 1.4rem 0;
 }
 
 h2 {
   background-color: #2b5680;
-  width: 100%;
-  padding: 0.2rem 1rem;
+  margin: 0;
+  padding: 0.2rem 0.5rem;
 }
 
-h1,
 h3,
 h4 {
   text-align: center;
   margin: 0;
-  padding: 0;
 }
 
 #sidebar {
@@ -64,7 +72,10 @@ nav aside {
   color: var(--menu-text-color);
 }
 
-main {
-  margin-left: var(--sidebar-width);
-  padding: 0 2rem;
+main :first-child h1 {
+  margin-top: 0;
 }
+/* 
+section {
+  border: 1px dotted white;
+} */
