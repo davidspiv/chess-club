@@ -2,16 +2,10 @@
   --accent-color: #36526f;
   --link-color: #396eff;
   --menu-text-color: #789eb7;
-
-  --sidebar-width: clamp(18rem, 20vw, 23rem);
 }
 
 body {
   margin: 1rem;
-}
-
-main {
-  margin-left: var(--sidebar-width);
 }
 
 h1 {
